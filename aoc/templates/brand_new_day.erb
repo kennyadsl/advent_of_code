@@ -1,0 +1,48 @@
+module AoC::<%= day_const_string %>
+  class Part1
+    def initialize(input = real_input)
+      @input = input
+    end
+
+    def solution
+      0
+    end
+
+    private
+
+    attr_reader :input
+
+    def real_input
+      @input ||= File.read("<%= input_path %>")
+    end
+  end
+
+  class Part2 < Part1
+    def solution
+      0
+    end
+  end
+end
+
+RSpec.describe "Day <%= day %>" do
+  let(:input) {
+    <<~INPUT
+    INPUT
+  }
+
+  describe AoC::<%= day_const_string %>::Part1 do
+    let(:instance) { described_class.new(input) }
+
+    describe "#solution" do
+      subject { instance.solution }
+    end
+  end
+
+  describe AoC::<%= day_const_string %>::Part2 do
+    let(:instance) { described_class.new(input) }
+
+    describe "#solution" do
+      subject { instance.solution }
+    end
+  end
+end
