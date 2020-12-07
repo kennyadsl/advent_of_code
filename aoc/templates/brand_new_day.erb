@@ -35,6 +35,8 @@ RSpec.describe "Day <%= day %>" do
 
     describe "#solution" do
       subject { instance.solution }
+
+      it { is_expected.to be(0) }
     end
   end
 
@@ -43,6 +45,8 @@ RSpec.describe "Day <%= day %>" do
 
     describe "#solution" do
       subject { instance.solution }
+
+      xit { is_expected.to be(0) }
     end
   end
 end
