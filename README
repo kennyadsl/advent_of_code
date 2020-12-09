@@ -1,0 +1,25 @@
+## Advent of Code
+
+### Start a new challenge
+
+Before starting a day, run the folling command:
+
+```
+be ./aoc.rb 2020 3 1
+```
+
+This will generate the files structure for that specific day (3 in the example).
+
+### Run specs for a specific day/part
+
+To run specs for a specific day/part run the command again:
+
+```
+# To run the program and specs for Day 3, Part 1
+be ./aoc.rb 2020 3 1
+
+# To run the program and specs for Day 3, Part 2
+be ./aoc.rb 2020 3 2
+```
+
+This will also print the solution if specs pass.
